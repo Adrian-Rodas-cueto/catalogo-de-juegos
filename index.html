@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo</title>
+    <script defer src="javascript/funciones.js"></script>
+    <link rel="stylesheet" href="CSS/style.CSS">
+    <link rel="stylesheet" href="CSS/fontello.css">
+    <link rel="stylesheet" href="CSS/animation.css">
+    <link rel="stylesheet" href="CSS/fontello-codes.css">
+    <link rel="stylesheet" href="CSS/fontello-embedded.css">
+    <link rel="stylesheet" href="CSS/fontello-ie7-codes.css">
+    <link rel="stylesheet" href="CSS/fontello-ie7.css">
+</head>
+
+<body>
+    <main>
+        <nav class="logo">
+        </nav>
+        <div class="barra1"></div>
+        <section class="indice">
+            <nav class="filtros">
+                <ul>
+                    <li class="genero">
+                        <a href="#">Genero<span class="icon icon-up-dir"></span></a>
+                        <div class="submenu">
+                            <ul>
+                                <li><input type="checkbox" name="1" id=""><a href="#">accion</a></input></li>
+                                <li><input type="checkbox" name="2" id=""><a href="#">aventura</a></input></li>
+                                <li><input type="checkbox" name="3" id=""><a href="#">rol</a></input></li>
+                                <li><input type="checkbox" name="4" id=""><a href="#">terror</a></input></li>
+                                <li><input type="checkbox" name="5" id=""><a href="#">suspenso</a></input></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Peso<span class="icon icon-up-dir"></span></a>
+                        <div class="submenu">
+                            <ul>
+                                <li><input type="checkbox"  id="1"><a href="#">0-25</a></input></li>
+                                <li><input type="checkbox"  id="2"><a href="#">25-50</a></input></li>
+                                <li><input type="checkbox"  id="3"><a href="#">50-100</a></input></li>
+                                <li><input type="checkbox"  id="4"><a href="#">100++</a></input></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" id="requisito">Requisitos<span class="icon icon-up-dir"></span></a>
+                        <div class="submenu">
+                            <ul>
+                                <li><input type="checkbox"  id="1"><a href="#">bajo</a></input></li>
+                                <li><input type="checkbox"  id="2"><a href="#">medio</a></input></li>
+                                <li><input type="checkbox"  id="3"><a href="#">alto</a></input></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <div class="buscador">
+                        <span class="icon icon-cancel" id="x"></span>
+                        <input class="cuadro" id="cuadro" type="text" placeholder="que juego t busco">
+                        <button class="boton-buscar" id="buscar" type="submit">
+                            <span class="icon icon-search" id="search"></span>
+                        </button>
+                    </div>
+                </ul>
+            </nav>
+        </section>
+        <div class="barra2"></div>
+        <section>
+            <ul id="sugerencia">
+
+            </ul>
+        </section>
+        <article class="juegos">
+            <ul id="juego">
+                
+            </ul>
+        </article>
+    </main>
+</body>
+
+</html>

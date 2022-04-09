@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    max-width: 1800px;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    background-image: url(../imagenes/background.jpg);
+    background-size: cover;
+}
+
+/* Logo */ 
+.logo {
+    margin: auto;
+    display: block;
+    width: 75%;
+    height: 150px;
+    background-image: url(../imagenes/template.jpg);
+    background-size: cover;
+}
+
+/*barra*/
+.barra1, .barra2 {
+    width: 75%;
+    height: 2px;
+    background-color: white;
+    display: block;
+    margin: auto;
+    padding: auto;
+}
+.barra1 {
+    margin-top: 5px;
+}
+
+
+/* seccion de filtros para buscar*/
+
+.indice{
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin: auto;
+    width: 75%;
+    height: 30px;
+}
+.indice .filtros> ul {
+    display: block;
+    margin-top: 0em ;
+    padding-left: 15em;
+    position: relative;
+}
+.indice .filtros> ul> li{
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.indice .filtros> ul> li> a {
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    color: white;
+    margin-left: 30px;
+}
+#requisito {
+    padding-left: 10px;
+}
+.indice .filtros> ul> li> a> span{
+    font-size: 20px;
+    position: absolute;
+    margin-left: 30px;
+    bottom: -13px;
+    display: none;
+}
+
+.indice .filtros> ul> li:hover span{
+    display: block;
+}
+
+.submenu {
+    border-radius: 5px;
+    margin-top: 6px;
+    margin-left: 50px;
+    background-color: lightgray;
+    display: none;
+    position: absolute;
+}
+
+.indice .filtros> ul> li:hover .submenu {
+    display: block;
+}
+
+.submenu> ul{
+    list-style: none;
+    padding: 0;
+}
+
+.submenu> ul> li> a{
+    text-decoration: none;
+    color: black;
+}
+
+/* buscador */
+
+.buscador {
+    display: inline;
+    margin-left: 1rem;
+}
+.buscador .cuadro ,#x{
+    border-radius: 5px;
+    display: none;
+}
+
+.buscador .boton-buscar {
+    cursor: pointer;
+    appearance: none;
+    border: none;
+    background-color: black;
+    height: 100%;
+    margin-left: 4rem;
+}
+.buscador .boton-buscar> span{
+   color: white;
+   size: 30px;
+}
+
+#sugerencia {
+    display: none;
+    margin: auto;
+    margin-left: 58%;
+    border-radius: 10px;
+    background-color: white;
+    list-style: none;
+    width: 15%;
+    padding-left:0;
+    border: 2px solid black;
+    position: absolute;
+}
+#sugerencia >li>span{
+    font-size: 15px;
+}
+#sugerencia >li>a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+#sugerencia >li:hover{
+    border-radius: 10px;
+    background-color: lightgray;
+}
+
+/* juegos */
+#juego{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+#juego img {
+    width: 300px;
+    height: 300px;
+    margin: 1rem;
+    border-radius: 12px;
+}
